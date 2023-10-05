@@ -75,7 +75,6 @@ spec:
         - name: WORKSPACE_BUILDAH_GIT_DEPENDENCY_TOKEN_BOUND
           value: $(workspaces.buildah-git-dependency-token.bound)
       script: >
-        
         if [ "${WORKSPACE_BUILDAH_GIT_DEPENDENCY_TOKEN_BOUND}" = "true"  ]; then
           token=$(ls ../buildah-git-dependency-token/)
           FILE=../buildah-git-dependency-token/$token 
