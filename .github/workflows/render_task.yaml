@@ -68,7 +68,7 @@ jobs:
       #     # git commit -m "Merge remote changes" -a
       - name: Commit Changes
         run: |
-          git pull
+          git pull --quiet origin main || true
           git config --global user.email "stakater@gmail.com"
           git config --global user.name "stakater-user"
           git add ${{ inputs.SUBPATH }}/rendered
