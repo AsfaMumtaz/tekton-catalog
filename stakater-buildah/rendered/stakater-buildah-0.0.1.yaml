@@ -64,6 +64,7 @@ spec:
       description: Current version of the application/image in dev.
       name: CURRENT_GIT_TAG
       type: string
+      
   results:
     - description: Digest of the image just built.
       name: IMAGE_DIGEST
